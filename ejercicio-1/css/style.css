@@ -8,10 +8,6 @@ html {
   padding: 35px;
 }
 
-ul {
-  list-style: none;
-}
-
 /*#############
 **### HEADER ##
 **#############
@@ -32,6 +28,7 @@ ul.list {
   align-items: center;
   list-style: none;
   margin: 15px;
+  padding: 20px;
 }
 
 ul.list > li > a:first-child {
@@ -40,30 +37,35 @@ ul.list > li > a:first-child {
 }
 
 body > header > nav > ul.list > li a {
-  margin: 5px;
-  font-size: 15px;
+  margin: 10px;
+  font-size: 25px;
   font-weight: 700;
 }
 
-body > header > section.ibra > ul {
+body > header > div.ibra > ul {
   display: flex;
-  margin: 15px;
+  margin: 20px;
   color: black;
 }
-
-body > header > section.ibra > ul li:nth-child(2) {
-  background-color: blue;
-  color: white;
-  font-size: 15px;
-  height: 50px;
-  width: 150px;
-  font-weight: 700;
+body > header > div.ibra > ul li {
+  list-style: none;
+  margin: 10px;
+  font-size: 20px;
 }
 
-body > header > section.ibra > ul li:last-child {
-  border: 1px solid;
-  height: 50px;
-  width: 100px;
+body > header > div.ibra > ul li a {
+  text-decoration: none;
+}
+
+body > header > div.ibra > ul li:nth-child(2) {
+  background-color: blue;
+  width: 35%;
+  height: 5%;
+}
+
+body > header > div.ibra > ul li:last-child {
+  border: 1px solid grey;
+  height: 5%;
 }
 
 body > header > section > ul li {
@@ -98,8 +100,22 @@ section.primero > div > ul li:first-child {
   margin: 5px;
   font-weight: 700;
 }
-#fuck ul li {
-  display: flex;
+
+.primero button.inglés {
+  background-color: blue;
+  color: white;
+  width: 10%;
+  height: 15%;
+  border: none;
+  font-size: 20px;
+}
+
+.primero button.francés {
+  background-color: white;
+  color: blue;
+  width: 10%;
+  height: 15%;
+  border: 1px solid blue;
 }
 
 section.primero > div > ul li:last-child {
@@ -130,12 +146,218 @@ section.primero > div > ul li:last-child {
 }
 
 .tercero img {
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
+  margin-right: 100px;
 }
-.tercero div {
+
+.uno ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-size: 50px;
+}
+.tercero > div > h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/*### Cuarto ##*/
+.cuarto h2 {
+  padding-top: 50px;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.cuarto {
   display: flex;
 }
-.tercero div h3 {
+
+.past h2:first-child {
+  text-align: center;
+}
+
+.past img,
+.present img,
+.future img {
+  width: 60%;
+  height: 60%;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  padding-top: 40px;
+}
+
+.past h3,
+.present h3,
+.future h3 {
   color: blue;
+  font-size: 20px;
+}
+
+.past h2,
+.present h2,
+.future h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.past p,
+.present p,
+.future p {
+  font-size: 25px;
+  padding-bottom: 30px;
+  color: grey;
+}
+
+.puff {
+  background-color: blue;
+  color: white;
+  width: 20%;
+  height: 5%;
+  border: none;
+}
+
+.for {
+  width: 20%;
+  height: 5%;
+  border: 0px solid grey;
+  padding: 15px 32px;
+}
+
+/*### Quinto ###*/
+
+.quinto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suma {
+  background-color: blue;
+  color: white;
+  height: 550px;
+  padding: 50px 30px;
+}
+
+.resta {
+  background-color: black;
+  margin-left: 10px;
+  color: white;
+  height: 550px;
+  padding: 50px 30px;
+}
+
+.suma h2,
+.resta h2 {
+  font-size: 60px;
+  font-weight: 800;
+  padding-bottom: 40px;
+}
+
+.suma p,
+.resta p {
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+
+.awa {
+  font-weight: bold;
+}
+
+.ada {
+  line-height: 30px;
+  padding-bottom: 40px;
+}
+
+#coco {
+  background-color: white;
+  color: blue;
+  width: 20%;
+  height: 10%;
+  border: none;
+  font-size: 20px;
+}
+
+#piña {
+  color: white;
+  background-color: blue;
+  width: 20%;
+  height: 10%;
+  font-size: 20px;
+  border: 1px solid white;
+}
+
+#fruta {
+  background-color: white;
+  color: black;
+  width: 20%;
+  height: 10%;
+  border: none;
+  font-size: 20px;
+}
+
+#verduras {
+  color: white;
+  background-color: black;
+  width: 20%;
+  height: 10%;
+  font-size: 20px;
+  border: 1px solid white;
+}
+
+/*###Sexto###*/
+
+.sexto div.papa {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sexto div.papa h1 {
+  font-size: 60px;
+}
+
+.sexto div.papa p {
+  font-size: 30px;
+}
+
+.sexto div.mama {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mama button {
+  width: 10%;
+  height: 30%;
+  font-size: 20px;
+}
+
+/*##### Footer ###*/
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 80px;
+}
+
+footer > nav > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 5px;
+  padding: 10px;
+}
+
+footer > figure > img {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.foot > div p {
+  text-align: left;
+  padding: 20px;
 }
